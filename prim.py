@@ -176,6 +176,7 @@ def prim(graph, root):
             #lower then node's current key, update the key and its parent
             if q.hasNode(v) and q.isLower(weight, supp[v]['key']):
                 q.updateNode(v, weight, minimum['node'])
+    
     return supp
 
 
