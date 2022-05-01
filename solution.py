@@ -32,10 +32,51 @@ def make_cycle(graph, n, list):
     return list
 
 
+def get_cycle_2_approx(graph, root):
+    mst = prim.prim(graph, root)
+    graph_mst = {}
+    for n in mst.keys():
+        graph_mst[n] = []
+        for n2 in mst.values():
+            if n2['parent'] == n:
+                graph_mst[n].append((n2['node'], n2['key']))
+    result = make_cycle(graph_mst, root, [root])
+    result.append(root)
+    print(result)
+    return result
+
+def get_cycle_nearest_neighbor(graph : dict, root: str):
+    keys = list(graph.keys())
+    keys.remove(root)
+    result = [root]
+    iterator = root
+    while keys and len(keys) > 0:
+        adj_list = graph[iterator]
+        min_node = None
+        min = None
+        for elem in adj_list:
+            n, w = elem
+            #print(n, w)
+            if n not in result and (min == None or w < min):
+                min = w
+                min_node = n
+        result.append(min_node)
+        iterator = min_node
+        keys.remove(iterator)
+
+    result.append(root)
+    return result
+
+
 if __name__ == "__main__":
     files = [
         "burma14.tsp",
-        #"eil51.tsp"
+        #"ulysses22.tsp",
+        #"eil51.tsp",
+        #"kroD100.tsp",
+        #"gr229.tsp",
+        #"d493.tsp",
+        #"dsj1000.tsp"
     ]
 
     for filename in files:
@@ -88,30 +129,24 @@ if __name__ == "__main__":
 
                     graph[n1].append((n2, w))
 
-        mst = prim.prim(graph, '1')
-        
-        graph_mst = {}
-        for n in mst.keys():
-            graph_mst[n] = []
-            print(mst[n])
-            for n2 in mst.values():
-                if n2['parent'] == n:
-                    graph_mst[n].append((n2['node'], n2['key']))
-        """for k in graph.keys():
-            print(k, graph[k])"""
-        root = '1'
-        result = make_cycle(graph_mst, root, [root])
-        lastNode = result[len(result) - 1]
-        result.append(graph[lastNode][0][0])
-        sum = 0
-        for i in range(len(result) - 1):
-            node = result[i]
-            next = result[i + 1]
-            print(node, next)
-            for elem in graph[node]:
-                if(next == elem[0]):
-                    print(node, next, elem[1])
-                    sum += elem[1]
-            print("----")
-        print(sum)
+        min = None
+        min_root = 0
+        for i in range(1, dimension):
+            root = str(i)
+
+            #result = get_cycle_2_approx(graph, root)
+            result = get_cycle_nearest_neighbor(graph, root)
+            sum = 0
+            for i in range(len(result) - 1):
+                node = result[i]
+                next = result[i + 1]
+                for elem in graph[node]:
+                    if(next == elem[0]):
+                        sum += elem[1]
+            print(sum)
+            if min == None or sum < min:
+                min = sum
+                min_root = root
+        print("Best TSP: starting from", min_root, "with total", min)
+
         
