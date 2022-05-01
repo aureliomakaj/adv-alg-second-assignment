@@ -3,7 +3,6 @@ from os.path import join
 from select import select
 from time import perf_counter_ns
 import gc
-from xml.etree.ElementPath import find
 import matplotlib.pyplot as plt
 import prim
 
@@ -123,11 +122,10 @@ def get_cycle_closest_insertion(graph: dict, start: str):
         if min == None or graph[start][node] < min:
             min = graph[start][node]
             second = node
-    # Add the node and remove it from the remaining nodes
+    # Add the second node and remove it from the remaining nodes
     result.append(second)
     keys.remove(second)
-
-    # Second step: iterate untile there are no more nodes to be added
+    # Second step: iterate until there are no more nodes to be added
     while len(keys) > 0:
         # Find the node that minimze the distance from the circuit c
         min_vertex = select_min_vertex(graph, result, keys)
@@ -135,7 +133,7 @@ def get_cycle_closest_insertion(graph: dict, start: str):
         node_to_insert = get_node_to_insert(graph, result, min_vertex)
         # Add the new node and remove it from the list
         index = result.index(node_to_insert)
-        result.insert(index, min_vertex)
+        result.insert(index + 1, min_vertex)
         keys.remove(min_vertex)
 
     # Add the start node to close the cycle
@@ -151,6 +149,7 @@ def select_min_vertex(graph, c, rest):
     for elem in rest:
         distance = circuit_vertex_distance(graph, c, elem)
         if min == None or distance < min:
+            min = distance
             min_vertex = elem
     return min_vertex
 
@@ -175,6 +174,10 @@ def get_node_to_insert(graph, c, k):
     min = graph[min_node][c[1]]
     while i < len(c) - 2:
         j = i + 1
+        """print(c[i], k, graph[c[i]][k])
+        print(k, c[j], graph[k][c[j]])
+        print(c[i], c[j], graph[c[i]][c[j]])
+        print("++++")"""
         weight = graph[c[i]][k] + graph[k][c[j]] - graph[c[i]][c[j]]
         if weight < min:
             min = weight
@@ -247,9 +250,6 @@ if __name__ == "__main__":
                     graph_matrix[n1][n2] = w
 
         min = None
-        for n in graph_matrix:
-            print(n, graph_matrix[n])
-        #print(graph_matrix)
         min_root = 0
         for i in range(1, dimension):
             root = str(i)
