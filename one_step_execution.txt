@@ -1,0 +1,222 @@
+Started file: burma14.tsp ----------
+Running 2-approx...
+Optimal: 3323
+Sum: 4003
+Time(ns): 231389
+Error: 0.2046343665362624
+Running nearest neighbor...
+Optimal: 3323
+Sum: 4048
+Time(ns): 25674
+Error: 0.21817634667469155
+Running closest insertion...
+Optimal: 3323
+Sum: 3471
+Time(ns): 87501
+Error: 0.044538068010833584
+----------------------------------------------------------------------------------------------------
+Started file: ulysses16.tsp ----------
+Running 2-approx...
+Optimal: 6859
+Sum: 7788
+Time(ns): 251193
+Error: 0.13544248432716138
+Running nearest neighbor...
+Optimal: 6859
+Sum: 9988
+Time(ns): 33957
+Error: 0.4561889488263595
+Running closest insertion...
+Optimal: 6859
+Sum: 7733
+Time(ns): 121280
+Error: 0.12742382271468145
+----------------------------------------------------------------------------------------------------
+Started file: ulysses22.tsp ----------
+Running 2-approx...
+Optimal: 7013
+Sum: 8308
+Time(ns): 404822
+Error: 0.1846570654498788
+Running nearest neighbor...
+Optimal: 7013
+Sum: 10586
+Time(ns): 65501
+Error: 0.5094823898474262
+Running closest insertion...
+Optimal: 7013
+Sum: 7880
+Time(ns): 262970
+Error: 0.12362754883787253
+----------------------------------------------------------------------------------------------------
+Started file: eil51.tsp ----------
+Running 2-approx...
+Optimal: 426
+Sum: 552
+Time(ns): 1417257
+Error: 0.29577464788732394
+Running nearest neighbor...
+Optimal: 426
+Sum: 497
+Time(ns): 571301
+Error: 0.16666666666666666
+Running closest insertion...
+Optimal: 426
+Sum: 495
+Time(ns): 2255108
+Error: 0.1619718309859155
+----------------------------------------------------------------------------------------------------
+Started file: berlin52.tsp ----------
+Running 2-approx...
+Optimal: 7542
+Sum: 10386
+Time(ns): 1551528
+Error: 0.37708830548926014
+Running nearest neighbor...
+Optimal: 7542
+Sum: 8962
+Time(ns): 625737
+Error: 0.18827897109520023
+Running closest insertion...
+Optimal: 7542
+Sum: 9105
+Time(ns): 2561259
+Error: 0.20723945902943516
+----------------------------------------------------------------------------------------------------
+Started file: kroD100.tsp ----------
+Running 2-approx...
+Optimal: 21294
+Sum: 28543
+Time(ns): 4451276
+Error: 0.34042453273222506
+Running nearest neighbor...
+Optimal: 21294
+Sum: 26906
+Time(ns): 3521023
+Error: 0.26354841739457124
+Running closest insertion...
+Optimal: 21294
+Sum: 25174
+Time(ns): 17038903
+Error: 0.18221095144172067
+----------------------------------------------------------------------------------------------------
+Started file: kroA100.tsp ----------
+Running 2-approx...
+Optimal: 21282
+Sum: 30472
+Time(ns): 4089602
+Error: 0.4318203176393196
+Running nearest neighbor...
+Optimal: 21282
+Sum: 27772
+Time(ns): 3484716
+Error: 0.3049525420543182
+Running closest insertion...
+Optimal: 21282
+Sum: 25896
+Time(ns): 15944706
+Error: 0.21680293205525797
+----------------------------------------------------------------------------------------------------
+Started file: ch150.tsp ----------
+Running 2-approx...
+Optimal: 6528
+Sum: 9123
+Time(ns): 8773290
+Error: 0.3975183823529412
+Running nearest neighbor...
+Optimal: 6528
+Sum: 8259
+Time(ns): 9779918
+Error: 0.26516544117647056
+Running closest insertion...
+Optimal: 6528
+Sum: 7986
+Time(ns): 57007143
+Error: 0.22334558823529413
+----------------------------------------------------------------------------------------------------
+Started file: gr202.tsp ----------
+Running 2-approx...
+Optimal: 40160
+Sum: 52615
+Time(ns): 14702664
+Error: 0.3101344621513944
+Running nearest neighbor...
+Optimal: 40160
+Sum: 49336
+Time(ns): 23121251
+Error: 0.22848605577689243
+Running closest insertion...
+Optimal: 40160
+Sum: 47442
+Time(ns): 141380431
+Error: 0.18132470119521912
+----------------------------------------------------------------------------------------------------
+Started file: gr229.tsp ----------
+Running 2-approx...
+Optimal: 134602
+Sum: 179335
+Time(ns): 18904557
+Error: 0.3323353293413174
+Running nearest neighbor...
+Optimal: 134602
+Sum: 162430
+Time(ns): 33013659
+Error: 0.2067428418597049
+Running closest insertion...
+Optimal: 134602
+Sum: 156965
+Time(ns): 223158773
+Error: 0.16614166208525877
+----------------------------------------------------------------------------------------------------
+Started file: pcb442.tsp ----------
+Running 2-approx...
+Optimal: 50778
+Sum: 72636
+Time(ns): 60363037
+Error: 0.4304620111071724
+Running nearest neighbor...
+Optimal: 50778
+Sum: 61926
+Time(ns): 236408982
+Error: 0.2195438969632518
+Running closest insertion...
+Optimal: 50778
+Sum: 60759
+Time(ns): 1592670297
+Error: 0.19656150301311592
+----------------------------------------------------------------------------------------------------
+Started file: d493.tsp ----------
+Running 2-approx...
+Optimal: 35002
+Sum: 45383
+Time(ns): 67430769
+Error: 0.2965830523970059
+Running nearest neighbor...
+Optimal: 35002
+Sum: 43244
+Time(ns): 288381123
+Error: 0.23547225872807268
+Running closest insertion...
+Optimal: 35002
+Sum: 40634
+Time(ns): 2144866007
+Error: 0.16090509113764928
+----------------------------------------------------------------------------------------------------
+Started file: dsj1000.tsp ----------
+Running 2-approx...
+Optimal: 18659688
+Sum: 25525517
+Time(ns): 250582116
+Error: 0.3679498285287514
+Running nearest neighbor...
+Optimal: 18659688
+Sum: 24630468
+Time(ns): 2903089884
+Error: 0.31998284215684636
+Running closest insertion...
+Optimal: 18659688
+Sum: 22720713
+Time(ns): 35576627819
+Error: 0.21763627559046003
+----------------------------------------------------------------------------------------------------
+Finished all in: 45.058796663 seconds
