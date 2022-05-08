@@ -263,13 +263,18 @@ def get_cycle_nearest_neighbor(graph : dict, start: str):
         Nearest Neighbor algorithm for TSP problem with log(n)-approximation. 
         First a list with the start node is created: foreach next step, the node with
         mimimum distance from the last element added is found.
-    """
-    keys = list(graph.keys())
-    keys.remove(start)
+    """    
+    size = len(graph.keys()) - 1
+    # Path result
     result = [start]
+    # Dict to map the nodes inserted in the path
+    visited = {
+        start: True
+    }
+    # Last node visited
     iterator = start
-    # Keep iterating until all nodes are added 
-    while len(keys) > 0:
+    # Keep iterating until all nodes are visited 
+    while size > 0:
         adj_list = graph[iterator]
         min_node = None
         min = None
@@ -277,13 +282,14 @@ def get_cycle_nearest_neighbor(graph : dict, start: str):
         # Find the node not in the circuit with the minimum distance from the last added node
         for elem in adj_list:
             n, w = elem
-            if n not in result and (min == None or w < min):
+            if visited.get(n) == None and (min == None or w < min):
                 min = w
                 min_node = n
-
-        # Add the node to the circuit, and remove it from the available nodes
+        
+        # Add the node to the circuit, and mark it as visited
         result.append(min_node)
-        keys.remove(min_node)
+        visited[min_node] = True
+        size -= 1
         iterator = min_node
 
     # Add the start at the end to close the cycle
@@ -519,13 +525,13 @@ if __name__ == "__main__":
         # in consideration only the best solution. 
         root = '1'
 
-        print("Running 2-approx...")
+        """print("Running 2-approx...")
         time, result = measure_run_time(get_cycle_2_approx, graph, root, 100, 10)
         sum = get_result_sum(result, graph)
         print("Optimal:", optimal_sol[i])
         print("Sum:", sum)
         print("Time(ns):", time)
-        print("Error:", (sum - optimal_sol[i]) / optimal_sol[i])
+        print("Error:", (sum - optimal_sol[i]) / optimal_sol[i])"""
 
         print("Running nearest neighbor...")
         time, result = measure_run_time(get_cycle_nearest_neighbor, graph, root, 100, 10)
@@ -535,13 +541,13 @@ if __name__ == "__main__":
         print("Time(ns):", time)
         print("Error:", (sum - optimal_sol[i]) / optimal_sol[i])
         
-        print("Running closest insertion...")
+        """print("Running closest insertion...")
         time, result = measure_run_time(get_cycle_closest_insertion, graph_matrix, root, 100, 10)
         sum = get_result_sum(result, graph)
         print("Optimal:", optimal_sol[i])
         print("Sum:", sum)
         print("Time(ns):", time)
-        print("Error:", (sum - optimal_sol[i]) / optimal_sol[i])
+        print("Error:", (sum - optimal_sol[i]) / optimal_sol[i])"""
         
         print(100 * "-")
 
