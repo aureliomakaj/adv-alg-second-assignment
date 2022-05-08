@@ -2,198 +2,221 @@ Started file: burma14.tsp ----------
 Running 2-approx...
 Optimal: 3323
 Sum: 4003
-Time(ns): 161980
+Time(ns): 176651
 Error: 0.2046343665362624
 Running nearest neighbor...
 Optimal: 3323
 Sum: 4048
-Time(ns): 17643
+Time(ns): 17598
 Error: 0.21817634667469155
 Running closest insertion...
 Optimal: 3323
 Sum: 3471
-Time(ns): 66831
+Time(ns): 66816
 Error: 0.044538068010833584
 ----------------------------------------------------------------------------------------------------
 Started file: ulysses16.tsp ----------
 Running 2-approx...
 Optimal: 6859
 Sum: 7788
-Time(ns): 183898
+Time(ns): 189873
 Error: 0.13544248432716138
 Running nearest neighbor...
 Optimal: 6859
 Sum: 9988
-Time(ns): 24535
+Time(ns): 24331
 Error: 0.4561889488263595
 Running closest insertion...
 Optimal: 6859
 Sum: 7733
-Time(ns): 95299
+Time(ns): 92329
 Error: 0.12742382271468145
 ----------------------------------------------------------------------------------------------------
 Started file: ulysses22.tsp ----------
 Running 2-approx...
 Optimal: 7013
 Sum: 8308
-Time(ns): 322973
+Time(ns): 311319
 Error: 0.1846570654498788
 Running nearest neighbor...
 Optimal: 7013
 Sum: 10586
-Time(ns): 52568
+Time(ns): 50355
 Error: 0.5094823898474262
 Running closest insertion...
 Optimal: 7013
 Sum: 7880
-Time(ns): 214157
+Time(ns): 203452
 Error: 0.12362754883787253
 ----------------------------------------------------------------------------------------------------
 Started file: eil51.tsp ----------
 Running 2-approx...
 Optimal: 426
 Sum: 552
-Time(ns): 1128098
+Time(ns): 1019191
 Error: 0.29577464788732394
 Running nearest neighbor...
 Optimal: 426
 Sum: 497
-Time(ns): 445194
+Time(ns): 423555
 Error: 0.16666666666666666
 Running closest insertion...
 Optimal: 426
 Sum: 495
-Time(ns): 1723331
+Time(ns): 1676546
 Error: 0.1619718309859155
 ----------------------------------------------------------------------------------------------------
 Started file: berlin52.tsp ----------
 Running 2-approx...
 Optimal: 7542
 Sum: 10386
-Time(ns): 1183966
+Time(ns): 1093449
 Error: 0.37708830548926014
 Running nearest neighbor...
 Optimal: 7542
 Sum: 8962
-Time(ns): 482541
+Time(ns): 471264
 Error: 0.18827897109520023
 Running closest insertion...
 Optimal: 7542
 Sum: 9105
-Time(ns): 2108189
+Time(ns): 1894749
 Error: 0.20723945902943516
 ----------------------------------------------------------------------------------------------------
 Started file: kroD100.tsp ----------
 Running 2-approx...
 Optimal: 21294
 Sum: 28543
-Time(ns): 3881464
+Time(ns): 3622051
 Error: 0.34042453273222506
 Running nearest neighbor...
 Optimal: 21294
 Sum: 26906
-Time(ns): 3020283
+Time(ns): 2894078
 Error: 0.26354841739457124
 Running closest insertion...
 Optimal: 21294
 Sum: 25174
-Time(ns): 13985242
+Time(ns): 13571922
 Error: 0.18221095144172067
 ----------------------------------------------------------------------------------------------------
 Started file: kroA100.tsp ----------
 Running 2-approx...
 Optimal: 21282
 Sum: 30472
-Time(ns): 3567558
+Time(ns): 3367836
 Error: 0.4318203176393196
 Running nearest neighbor...
 Optimal: 21282
 Sum: 27772
-Time(ns): 3163866
+Time(ns): 2938939
 Error: 0.3049525420543182
 Running closest insertion...
 Optimal: 21282
 Sum: 25896
-Time(ns): 14109833
+Time(ns): 13247039
 Error: 0.21680293205525797
 ----------------------------------------------------------------------------------------------------
 Started file: ch150.tsp ----------
 Running 2-approx...
 Optimal: 6528
 Sum: 9123
-Time(ns): 8717485
+Time(ns): 7519044
 Error: 0.3975183823529412
 Running nearest neighbor...
 Optimal: 6528
 Sum: 8259
-Time(ns): 9193885
+Time(ns): 8214618
 Error: 0.26516544117647056
 Running closest insertion...
 Optimal: 6528
 Sum: 7986
-Time(ns): 55578649
+Time(ns): 48561383
 Error: 0.22334558823529413
 ----------------------------------------------------------------------------------------------------
 Started file: gr202.tsp ----------
 Running 2-approx...
 Optimal: 40160
 Sum: 52615
-Time(ns): 13961258
+Time(ns): 12818511
 Error: 0.3101344621513944
 Running nearest neighbor...
 Optimal: 40160
 Sum: 49336
-Time(ns): 22215933
+Time(ns): 19791447
 Error: 0.22848605577689243
 Running closest insertion...
 Optimal: 40160
 Sum: 47442
-Time(ns): 125061912
+Time(ns): 117774826
 Error: 0.18132470119521912
 ----------------------------------------------------------------------------------------------------
 Started file: gr229.tsp ----------
 Running 2-approx...
 Optimal: 134602
 Sum: 179335
-Time(ns): 19107559
+Time(ns): 16250051
 Error: 0.3323353293413174
 Running nearest neighbor...
 Optimal: 134602
 Sum: 162430
-Time(ns): 30800381
+Time(ns): 28368488
 Error: 0.2067428418597049
 Running closest insertion...
 Optimal: 134602
 Sum: 156965
-Time(ns): 184779457
+Time(ns): 171069889
 Error: 0.16614166208525877
 ----------------------------------------------------------------------------------------------------
 Started file: pcb442.tsp ----------
 Running 2-approx...
 Optimal: 50778
 Sum: 72636
-Time(ns): 54336001
+Time(ns): 53109760
 Error: 0.4304620111071724
 Running nearest neighbor...
 Optimal: 50778
 Sum: 61926
-Time(ns): 210218890
+Time(ns): 204537299
 Error: 0.2195438969632518
 Running closest insertion...
 Optimal: 50778
 Sum: 60759
-Time(ns): 1608890446
+Time(ns): 1431346887
 Error: 0.19656150301311592
 ----------------------------------------------------------------------------------------------------
 Started file: d493.tsp ----------
 Running 2-approx...
 Optimal: 35002
 Sum: 45383
-Time(ns): 69703276
+Time(ns): 69051135
 Error: 0.2965830523970059
 Running nearest neighbor...
 Optimal: 35002
 Sum: 43244
-Time(ns): 321666400
+Time(ns): 291289535
 Error: 0.23547225872807268
 Running closest insertion...
+Optimal: 35002
+Sum: 40634
+Time(ns): 2092490420
+Error: 0.16090509113764928
+----------------------------------------------------------------------------------------------------
+Started file: dsj1000.tsp ----------
+Running 2-approx...
+Optimal: 18659688
+Sum: 25525517
+Time(ns): 252482863
+Error: 0.3679498285287514
+Running nearest neighbor...
+Optimal: 18659688
+Sum: 24630468
+Time(ns): 2876991579
+Error: 0.31998284215684636
+Running closest insertion...
+Optimal: 18659688
+Sum: 22720713
+Time(ns): 32994071010
+Error: 0.21763627559046003
+----------------------------------------------------------------------------------------------------
+Finished all in: 40744.518997497 seconds
