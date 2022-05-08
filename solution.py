@@ -525,13 +525,13 @@ if __name__ == "__main__":
         # in consideration only the best solution. 
         root = '1'
 
-        """print("Running 2-approx...")
+        print("Running 2-approx...")
         time, result = measure_run_time(get_cycle_2_approx, graph, root, 100, 10)
         sum = get_result_sum(result, graph)
         print("Optimal:", optimal_sol[i])
         print("Sum:", sum)
         print("Time(ns):", time)
-        print("Error:", (sum - optimal_sol[i]) / optimal_sol[i])"""
+        print("Error:", (sum - optimal_sol[i]) / optimal_sol[i])
 
         print("Running nearest neighbor...")
         time, result = measure_run_time(get_cycle_nearest_neighbor, graph, root, 100, 10)
@@ -541,13 +541,13 @@ if __name__ == "__main__":
         print("Time(ns):", time)
         print("Error:", (sum - optimal_sol[i]) / optimal_sol[i])
         
-        """print("Running closest insertion...")
+        print("Running closest insertion...")
         time, result = measure_run_time(get_cycle_closest_insertion, graph_matrix, root, 100, 10)
         sum = get_result_sum(result, graph)
         print("Optimal:", optimal_sol[i])
         print("Sum:", sum)
         print("Time(ns):", time)
-        print("Error:", (sum - optimal_sol[i]) / optimal_sol[i])"""
+        print("Error:", (sum - optimal_sol[i]) / optimal_sol[i])
         
         print(100 * "-")
 
